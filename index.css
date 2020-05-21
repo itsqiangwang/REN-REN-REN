@@ -1,0 +1,142 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.horizontal-scroll-wrapper{
+	height: 100vh;
+	width: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+  white-space: nowrap;
+  font-size: 0px;
+  -ms-overflow-style: none;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar{
+  display: none;
+}
+
+.horizontal-scroll-wrapper div{
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+.horizontal-scroll-wrapper div h1{
+  width: 100%;
+  text-align: center;
+}
+
+.horizontal-scroll-wrapper div h1 a{
+  font-size: 36px !important;
+  color: white;
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 5vh;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-decoration: none;
+}
+
+.horizontal-scroll-wrapper div h1 a:hover{
+  text-decoration: underline;
+}
+
+.horizontal-scroll-wrapper div img{
+	height: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	transition: opacity 1s;
+  position: relative;
+  z-index: 1;
+}
+
+.horizontal-scroll-wrapper div img:hover{
+	opacity: 1;
+}
+
+.horizontal-scroll-wrapper div span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 75vh !important;
+  z-index: 0;
+}
+
+.horizontal-scroll-wrapper div div{
+  height: 1vh;
+  width: 50vw;
+  background-color: white;
+  margin-bottom: 50vh;
+}
+
+/*.horizontal-scroll-wrapper div p{
+  margin: 50px;
+  white-space: normal !important;
+	color: white;
+  overflow-y: scroll !important;
+	font-size: 72px !important;
+}*/
+
+/*::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+body {
+  background: #111;
+}
+
+img {
+  box-sizing: border-box;
+}
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: calc(800px + 1px);
+  max-height: 1280px;
+  margin: 0;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: rotate(-90deg) translateY(-800px);
+          transform: rotate(-90deg) translateY(-800px);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+.horizontal-scroll-wrapper > img {
+  display: block;
+  padding: 5px;
+  background: #cab;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.squares {
+  padding: 800px 0 0 0;
+}
+.squares > img {
+  width: 800px;
+  height: 800px;
+  margin: 10px 0;
+}*/
