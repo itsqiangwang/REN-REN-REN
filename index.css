@@ -1,7 +1,8 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	background-color: black;
+  cursor: default;
+  font-family: 'times new roman', serif;
 }
 
 .horizontal-scroll-wrapper{
@@ -25,26 +26,19 @@ html, body{
   position: relative;
 }
 
-.horizontal-scroll-wrapper div h1{
-  width: 100%;
-  text-align: center;
-}
-
-.horizontal-scroll-wrapper div h1 a{
+.horizontal-scroll-wrapper div a{
   font-size: 36px !important;
-  color: white;
-  mix-blend-mode: difference;
   position: fixed;
-  top: 5vh;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  z-index: 2;
+  right:18px;
   text-decoration: none;
+  opacity: 1;
+  transition: 0.3s;
+  color: black;
+  z-index: 2;
 }
 
-.horizontal-scroll-wrapper div h1 a:hover{
-  text-decoration: underline;
+.horizontal-scroll-wrapper div a:hover{
+  opacity: 0.2;
 }
 
 .horizontal-scroll-wrapper div img{
@@ -67,76 +61,27 @@ html, body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-size: 75vh !important;
   z-index: 0;
 }
 
 .horizontal-scroll-wrapper div div{
-  height: 1vh;
+  height: 2vh;
   width: 50vw;
-  background-color: white;
   margin-bottom: 50vh;
+  background-color: black;
 }
 
-/*.horizontal-scroll-wrapper div p{
-  margin: 50px;
-  white-space: normal !important;
-	color: white;
-  overflow-y: scroll !important;
-	font-size: 72px !important;
-}*/
-
-/*::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+@media only screen and (max-width:480px) {
+  .horizontal-scroll-wrapper div img{
+    width: 100%;
+    height: auto;
+  }
 }
 
-::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px;
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .horizontal-scroll-wrapper div img{
+    width: 100%;
+    height: auto;
+  }
 }
-
-body {
-  background: #111;
-}
-
-img {
-  box-sizing: border-box;
-}
-
-.horizontal-scroll-wrapper {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: calc(800px + 1px);
-  max-height: 1280px;
-  margin: 0;
-  padding-top: 1px;
-  background: #abc;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-transform: rotate(-90deg) translateY(-800px);
-          transform: rotate(-90deg) translateY(-800px);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
-}
-.horizontal-scroll-wrapper > img {
-  display: block;
-  padding: 5px;
-  background: #cab;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
-}
-
-.squares {
-  padding: 800px 0 0 0;
-}
-.squares > img {
-  width: 800px;
-  height: 800px;
-  margin: 10px 0;
-}*/
