@@ -72,16 +72,16 @@ html, body{
   background-color: black;
 }
 
-@media only screen and (max-width:480px) {
+/*@media only screen and (max-width:480px) {
   .horizontal-scroll-wrapper div img{
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
   .horizontal-scroll-wrapper div img{
-    width: 100%;
+    width: 100vw;
     height: auto;
   }
-}
+}*/
