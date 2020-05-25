@@ -2,7 +2,18 @@ html, body{
 	margin: 0;
 	padding: 0;
   cursor: default;
-  font-family: 'times new roman', serif;
+  font-family: 'times new roman', 'Noto Serif SC', serif;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .horizontal-scroll-wrapper{
@@ -38,7 +49,7 @@ html, body{
 }
 
 .horizontal-scroll-wrapper div a:hover{
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .horizontal-scroll-wrapper div img{
@@ -71,17 +82,3 @@ html, body{
   margin-bottom: 50vh;
   background-color: black;
 }
-
-/*@media only screen and (max-width:480px) {
-  .horizontal-scroll-wrapper div img{
-    width: 100vw;
-    height: auto;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width:768px) {
-  .horizontal-scroll-wrapper div img{
-    width: 100vw;
-    height: auto;
-  }
-}*/
