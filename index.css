@@ -38,7 +38,7 @@ html, body{
 }
 
 .horizontal-scroll-wrapper div a{
-  font-size: 36px !important;
+  font-size: 36px;
   position: fixed;
   right:18px;
   text-decoration: none;
@@ -50,6 +50,26 @@ html, body{
 
 .horizontal-scroll-wrapper div a:hover{
   opacity: 0.5;
+}
+
+.horizontal-scroll-wrapper .about-link a{
+  top: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 32px;
+}
+
+.horizontal-scroll-wrapper .download-link a{
+  bottom: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 32px;
 }
 
 .horizontal-scroll-wrapper div img{
