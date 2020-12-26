@@ -60,6 +60,7 @@ html, body{
   border: 2px solid black;
   text-align: center;
   font-size: 32px;
+  font-family: sans-serif;
 }
 
 .horizontal-scroll-wrapper .download-link a{
