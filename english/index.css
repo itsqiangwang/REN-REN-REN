@@ -1,0 +1,128 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'times new roman', 'Noto Serif SC', serif;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.return-link a{
+  font-size: 18px;
+  display: inline-block;
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  text-align: center;
+  opacity: 1 !important;
+  text-decoration: none !important;
+}
+
+.download-link a{
+  position: fixed;
+  right:18px;
+  bottom: 18px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 32px;
+  opacity: 1 !important;
+  text-decoration: none !important;
+}
+
+.return-link a:hover,
+.download-link a:hover{
+  opacity: 0.5 !important;
+}
+
+hr{
+  width: 93%;
+  margin-left: 18px;
+}
+
+.credit{
+  width: 93%;
+  font-size: 18px;
+  margin: 0;
+  padding:18px;
+}
+
+.intro-text{
+  width: 93%;
+  font-size: 36px;
+  margin: 0;
+  padding:18px;
+}
+
+.body-text{
+  width: 93%;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 0 18px 18px;
+}
+
+h1,h2{
+  font-size: 18px;
+  margin: 0;
+  padding: 18px;
+  font-weight: bold;
+}
+
+.image{
+  width: 93%;
+  padding: 18px;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  color: black;
+  text-decoration: underline;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.chinese-leading{
+  line-height: 18px;
+}
+
+@media only screen and (max-width:480px) {
+  .credit,
+  .body-text,
+  .intro-text,
+  .image,
+  hr{
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+  .credit,
+  .body-text,
+  .intro-text,
+  .image,
+  hr{
+    width: 90 %;
+  }
+}
