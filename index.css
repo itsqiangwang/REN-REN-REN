@@ -59,8 +59,8 @@ html, body{
   border-radius: 36px;
   border: 2px solid black;
   text-align: center;
-  font-size: 32px;
-  font-family: sans-serif;
+  font-size: 24px;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 .horizontal-scroll-wrapper .download-link a{
