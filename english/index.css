@@ -3,8 +3,6 @@ html, body{
   padding: 0;
   animation-name: fadeIn;
   animation-duration: 2s;
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -24,7 +22,7 @@ nav a{
   display: inline-block;
   position: fixed;
   top: 18px;
-  right: 36px;
+  right: 18px;
   text-align: center;
   opacity: 1;
   text-decoration: none;
@@ -39,7 +37,7 @@ main .download-link a{
   color: black;
   transition: 0.3s;
   position: fixed;
-  right:36px;
+  right:18px;
   bottom: 18px;
   z-index: 2;
   width: 36px;
@@ -79,11 +77,6 @@ main h2{
   margin: 0;
   padding: 18px;
   font-weight: bold;
-  position: sticky;
-  top: 0;
-  display: block;
-  width: 100vw;
-  background-color: white;
 }
 
 main figure{
@@ -133,7 +126,7 @@ main .credit a:hover {
   main p,
   main figure,
   hr{
-    width: 85% !important;
+    width: 80% !important;
   }
 }
 
@@ -145,6 +138,6 @@ main .credit a:hover {
   main p,
   main figure,
   hr{
-    width: 85% !important;
+    width: 80% !important;
   }
 }

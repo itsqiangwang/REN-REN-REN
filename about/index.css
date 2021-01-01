@@ -105,10 +105,10 @@ p{
 
 @media only screen and (max-width:480px) {
   main p{
-    width: 85%;
+    width: 80%;
   }
   main .download-link a{
-    font-size: 90vw;
+    font-size: 80vw;
     width: 90vw;
     height: 90vw;
     border-radius: 99vw;
@@ -117,10 +117,10 @@ p{
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
   main p{
-    width: 85%;
+    width: 80%;
   }
   main .download-link a{
-    font-size: 90vw;
+    font-size: 80vw;
     width: 90vw;
     height: 90vw;
     border-radius: 99vw;
