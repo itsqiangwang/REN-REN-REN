@@ -2,7 +2,7 @@ html, body{
 	margin: 0;
 	padding: 0;
   cursor: default;
-  font-family: 'times new roman', 'Noto Serif SC', serif;
+  overflow: hidden;
   animation-name: fadeIn;
   animation-duration: 2s;
 }
@@ -16,64 +16,31 @@ html, body{
   }
 }
 
-.horizontal-scroll-wrapper{
+/*image styling*/
+
+main{
 	height: 100vh;
 	width: auto;
 	overflow-x: scroll;
 	overflow-y: hidden;
   white-space: nowrap;
   font-size: 0px;
-  -ms-overflow-style: none;
 }
 
-.horizontal-scroll-wrapper::-webkit-scrollbar{
-  display: none;
-}
-
-.horizontal-scroll-wrapper div{
+main figure,
+main div{
   display: inline-block;
   height: 100%;
   width: auto;
   position: relative;
 }
 
-.horizontal-scroll-wrapper div a{
-  font-size: 36px;
-  position: fixed;
-  right:18px;
-  text-decoration: none;
-  opacity: 1;
-  transition: 0.3s;
-  color: black;
-  z-index: 2;
+main figure{
+  margin: 0;
+  padding: 0;
 }
 
-.horizontal-scroll-wrapper div a:hover{
-  opacity: 0.5;
-}
-
-.horizontal-scroll-wrapper .about-link a{
-  top: 18px;
-  width: 36px;
-  height: 36px;
-  border-radius: 36px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 24px;
-  font-family: 'Noto Sans SC', sans-serif;
-}
-
-.horizontal-scroll-wrapper .download-link a{
-  bottom: 18px;
-  width: 36px;
-  height: 36px;
-  border-radius: 36px;
-  border: 2px solid black;
-  text-align: center;
-  font-size: 32px;
-}
-
-.horizontal-scroll-wrapper div img{
+main figure img{
 	height: 100%;
 	width: auto;
 	margin: 0;
@@ -84,11 +51,11 @@ html, body{
   z-index: 1;
 }
 
-.horizontal-scroll-wrapper div img:hover{
+main figure img:hover{
 	opacity: 1;
 }
 
-.horizontal-scroll-wrapper div span{
+main figure span{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,27 +64,67 @@ html, body{
   z-index: 0;
 }
 
-.horizontal-scroll-wrapper div div{
+main div div{
   height: 2vh;
   width: 50vw;
   margin-bottom: 50vh;
   background-color: black;
 }
 
+/*link styling*/
+
+main .download-link a,
+nav .about-link a{
+  font-size: 36px;
+  position: fixed;
+  right:18px;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.3s;
+  color: black;
+  z-index: 2;
+}
+
+main .download-link a:hover,
+nav .about-link a:hover{
+  opacity: 0.5;
+}
+
+nav .about-link a{
+  top: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+main .download-link a{
+  bottom: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 32px;
+}
+
 @media only screen and (max-width:480px) {
-  .horizontal-scroll-wrapper div img{
+  main figure img{
     opacity: 1;
   }
-  .horizontal-scroll-wrapper div div{
+  main div div{
     width: 100vw;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
-  .horizontal-scroll-wrapper div img{
+  main figure img{
     opacity: 1;
   }
-  .horizontal-scroll-wrapper div div{
+  main div div{
     width: 100vw;
   }
 }

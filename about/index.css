@@ -6,10 +6,6 @@ html, body{
   animation-duration: 2s;
 }
 
-body::-webkit-scrollbar{
-  display: none;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -19,21 +15,7 @@ body::-webkit-scrollbar{
   }
 }
 
-.about-container{
-  width: 100%;
-  position: relative;
-  font-size: 18px;
-  color: black;
-  letter-spacing: 0.5px;
-}
-
-.about-container p:nth-of-type(3) a,
-.about-container p:nth-of-type(4) a,
-.about-container p:nth-of-type(5) a{
-  font-size: 16px;
-}
-
-.return-link{
+nav{
   display: inline-block;
   position: fixed;
   top: 18px;
@@ -42,7 +24,7 @@ body::-webkit-scrollbar{
   z-index: 2;
 }
 
-.return-link a{
+nav a{
   font-family: 'times new roman', 'Noto Serif SC', serif;
   font-size: 18px;
   opacity: 1;
@@ -52,17 +34,31 @@ body::-webkit-scrollbar{
   z-index: 3;
 }
 
-.return-link a:hover{
+nav a:hover{
   opacity: 0.5;
 }
 
-.download-link{
+main{
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+main p:nth-of-type(3) a,
+main p:nth-of-type(4) a,
+main p:nth-of-type(5) a{
+  font-size: 16px;
+}
+
+main .download-link{
   text-align: center;
   width: 100vw;
   z-index: 2;
 }
 
-.download-link a{
+main .download-link a{
   font-family: 'times new roman', 'Noto Serif SC', serif;
   font-size: 90vh;
   width: 99vh;
@@ -79,7 +75,7 @@ body::-webkit-scrollbar{
   transition: 0.6s;
 }
 
-.download-link a:hover{
+main .download-link a:hover{
   opacity: 1;
 }
 
@@ -100,7 +96,7 @@ a:hover {
 p{
   margin:0;
   padding: 18px;
-  width: 93%;
+  width: 90%;
 }
 
 .chinese-leading{
@@ -108,25 +104,25 @@ p{
 }
 
 @media only screen and (max-width:480px) {
-  .about-container p{
-    width: 80%;
+  main p{
+    width: 85%;
   }
-  .download-link a{
+  main .download-link a{
     font-size: 90vw;
-    width: 99vw;
-    height: 99vw;
+    width: 90vw;
+    height: 90vw;
     border-radius: 99vw;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
-  .about-container p{
-    width: 90%;
+  main p{
+    width: 85%;
   }
-  .download-link a{
+  main .download-link a{
     font-size: 90vw;
-    width: 99vw;
-    height: 99vw;
+    width: 90vw;
+    height: 90vw;
     border-radius: 99vw;
   }
 }

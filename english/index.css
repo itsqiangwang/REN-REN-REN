@@ -1,13 +1,11 @@
 html, body{
   margin: 0;
   padding: 0;
-  font-family: 'times new roman', 'Noto Serif SC', serif;
   animation-name: fadeIn;
   animation-duration: 2s;
-}
-
-body::-webkit-scrollbar{
-  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
@@ -19,21 +17,29 @@ body::-webkit-scrollbar{
   }
 }
 
-.return-link a{
+nav a{
+  color: black;
+  transition: 0.3s;
   font-size: 18px;
   display: inline-block;
   position: fixed;
   top: 18px;
-  right: 18px;
+  right: 36px;
   text-align: center;
-  opacity: 1 !important;
-  text-decoration: none !important;
+  opacity: 1;
+  text-decoration: none;
   z-index: 2;
 }
 
-.download-link a{
+nav a:hover{
+  opacity: 0.5;
+}
+
+main .download-link a{
+  color: black;
+  transition: 0.3s;
   position: fixed;
-  right:18px;
+  right:36px;
   bottom: 18px;
   z-index: 2;
   width: 36px;
@@ -42,42 +48,33 @@ body::-webkit-scrollbar{
   border: 2px solid black;
   text-align: center;
   font-size: 32px;
-  opacity: 1 !important;
-  text-decoration: none !important;
+  opacity: 1;
+  text-decoration: none;
 }
 
-.return-link a:hover,
-.download-link a:hover{
-  opacity: 0.5 !important;
+main .download-link a:hover{
+  opacity: 0.5;
 }
 
-hr{
-  width: 93%;
-  margin-left: 18px;
-}
-
-.credit{
-  width: 93%;
-  font-size: 18px;
-  margin: 0;
-  padding:18px;
-}
-
-.intro-text{
-  width: 93%;
+main .intro-text{
+  font-family: 'times new roman', 'Noto Serif SC', serif;
+  width: 90%;
   font-size: 36px;
   margin: 0;
   padding:18px;
 }
 
-.body-text{
-  width: 93%;
+main .body-text{
+  font-family: 'times new roman', 'Noto Serif SC', serif;
+  width: 90%;
   font-size: 18px;
   margin: 0;
   padding: 0 0 18px 18px;
 }
 
-h1,h2{
+main h1,
+main h2{
+  font-family: 'times new roman', 'Noto Serif SC', serif;
   font-size: 18px;
   margin: 0;
   padding: 18px;
@@ -89,51 +86,65 @@ h1,h2{
   background-color: white;
 }
 
-.image{
-  width: 93%;
+main figure{
+  width: 90%;
   padding: 18px;
+  margin: 0;
 }
 
-img{
+main figure img{
   width: 100%;
 }
 
-a{
+main p .chinese-leading{
+  line-height: 18px;
+}
+
+hr{
+  width: 90%;
+  margin-left: 18px;
+}
+
+main .credit{
+  width: 90%;
+  font-size: 18px;
+  margin: 0;
+  padding:18px;
+}
+
+main .credit a{
   color: black;
   text-decoration: underline;
   opacity: 0.5;
   transition: 0.3s;
-}
-
-a:hover {
-  opacity: 1;
-}
-
-.chinese-leading{
-  line-height: 18px;
-}
-
-.credit a{
   font-family: 'Noto Sans SC', sans-serif;
   font-size: 16px;
 }
 
+main .credit a:hover {
+  opacity: 1;
+}
+
 @media only screen and (max-width:480px) {
-  .credit,
-  .body-text,
-  .intro-text,
-  .image,
+  main .intro-text{
+    font-size: 24px;
+  }
+
+  main p,
+  main figure,
   hr{
-    width: 80%;
+    width: 85% !important;
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
-  .credit,
-  .body-text,
-  .intro-text,
-  .image,
+  main .intro-text{
+    font-size: 24px;
+  }
+
+  main p,
+  main figure,
   hr{
-    width: 90%;
+    width: 85% !important;
   }
 }
